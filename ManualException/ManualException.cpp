@@ -18,6 +18,10 @@ int main() {
 	catch (exception& e) {
 		// Penangkap Menggunakan Obyek Exception
 		cout << e.what() << endl;
-		/* Akan Dieksekusi Karena Array Data Hanya Memiliki 3 Elemen*/
+		/* Akan Dieksekusi Karena Array Data Hanya Memiliki 3 Elemen */
 	}
+
+	cout << "Baris Program Yang Terakhir" << endl;
+	/* Penanda 2 : Bahwa Program Berjalan Tnpa Berhenti Meskipun Terjadi Kesalahan */
+	return 0;
 }
