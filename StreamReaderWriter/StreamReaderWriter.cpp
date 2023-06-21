@@ -23,4 +23,14 @@ int main() {
 		// Menilis Dan Memasukkan Nilai Dari "Baris" Ke Dalam File
 		outfile << baris << endl;
 	}
+	// Selesai Dalam Menulis Sekarang Tutup Filenya
+	outfile.close();
+
+	// Membuka File Dalam Mode Membaca
+	ifstream infile;
+	// Menunjuk Ke Sebuah File
+	infile.open("ContohFile.txt");
+
+	cout << endl << ">= Membuka Dan Membaca File" << endl;
+	
 }
