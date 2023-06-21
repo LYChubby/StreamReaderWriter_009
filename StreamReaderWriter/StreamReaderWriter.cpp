@@ -32,5 +32,19 @@ int main() {
 	infile.open("ContohFile.txt");
 
 	cout << endl << ">= Membuka Dan Membaca File" << endl;
-	
+	// Jika File Ada Maka
+	if (infile.is_open()) {
+
+		// Melakukan Perulangan Setiap Baris
+		while (getline(infile, baris)) {
+
+			// Dan Tampilan Disini
+			cout << baris << '\n';
+		}
+		// Tutup File Tersebut Setelah Selesai
+		infile.close();
+	}
+	// Jika Tidak Ditemukan File Maka Akan Menampilkan Ini
+	else cout << "Unable To Open File";
+	return 0;
 }
